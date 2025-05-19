@@ -1,0 +1,116 @@
+1. Creating Arrays
+Indexed Arrays
+$colors = array("Red", "Green", "Blue");
+Or using shorthand:
+
+$colors = ["Red", "Green", "Blue"];
+Associative Arrays
+$person = array("name" => "John", "age" => 30, "city" => "New York");
+Or using shorthand:
+
+$person = ["name" => "John", "age" => 30, "city" => "New York"];
+2. Accessing Array Elements
+echo $colors[0]; // Output: Red
+echo $person["name"]; // Output: John
+3. Adding Elements
+To Indexed Array
+$colors[] = "Yellow"; // Adds "Yellow" to the end
+To Associative Array
+$person["job"] = "Developer"; // Adds a new key-value pair
+4. Looping Through Arrays
+Using foreach
+foreach ($colors as $color) {
+    echo $color . " "; // Output: Red Green Blue
+}
+Using for (for indexed arrays)
+for ($i = 0; $i < count($colors); $i++) {
+    echo $colors[$i] . " "; // Output: Red Green Blue
+}
+5. Array Functions
+Count Elements
+$count = count($colors); // Output: 4
+Sort Arrays
+sort($colors); // Sorts the array
+6. Printing Arrays
+There are different ways to print arrays in PHP:
+
+1. Using print_r()
+print_r($colors); 
+// Output: 
+// Array
+// (
+//     [0] => Red
+//     [1] => Green
+//     [2] => Blue
+//     [3] => Yellow
+// )
+2. **Using `
+complete
+
+Sure! Let's continue with the different ways to print arrays in PHP, including the examples based on your current context.
+
+6. Printing Arrays (Continued)
+2. Using var_dump()
+var_dump() provides more detailed information about the array, including its type and structure.
+
+var_dump($colors); 
+// Output:
+// array(4) {
+//   [0]=> string(3) "Red"
+//   [1]=> string(5) "Green"
+//   [2]=> string(4) "Blue"
+//   [3]=> string(6) "Yellow"
+// }
+3. Using implode()
+You can convert an array to a string using a delimiter.
+
+$colorString = implode(", ", $colors);
+echo $colorString; // Output: Red, Green, Blue, Yellow
+4. Using foreach for Custom Formatting
+You can format the output while iterating through the array.
+
+foreach ($colors as $index => $color) {
+    echo "Color at index $index is $color\n"; 
+}
+// Output:
+// Color at index 0 is Red
+// Color at index 1 is Green
+// Color at index 2 is Blue
+// Color at index 3 is Yellow
+Example in Your Current Context
+In your existing file HelloWorld.php, you have code that checks for a substring and prints an array. Here’s how you can use the different printing methods:
+
+<?php
+
+$str = "Hello, World!";
+$position = strpos($str, "World");
+if ($position !== false) {
+    echo "Found at position: " . $position . "\n"; // Output: Found at position: 7
+} else {
+    echo "Not found\n";
+}
+
+echo "\n";
+
+$ar = array("hello", "World!");
+// Using print_r
+print_r($ar); 
+// Output:
+// Array
+// (
+//     [0] => hello
+//     [1] => World!
+// )
+
+// Using var_dump
+var_dump($ar); 
+// Output:
+// array(2) {
+//   [0]=> string(5) "hello"
+//   [1]=> string(6) "World!"
+// }
+
+// Using implode
+echo implode(" ", $ar); // Output: hello World!
+
+// Using foreach for custom formatting
