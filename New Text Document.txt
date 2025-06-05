@@ -1,0 +1,94 @@
+// SLWA NODE.JS LAB Reprot
+// Author: Mohammed Almashhor
+
+//Practice with REBL
+console.log("Hello, World!");
+
+let name = "Mohammed Almashhor";
+console.log(name);
+
+console.log(1 + 2);
+
+console.log(1 * 2);
+
+console.log(1 / 2);
+
+console.log(1 % 2);
+
+function greet() {
+  console.log("Hello!");
+}
+greet();
+
+console.log(" " + name);
+
+// Practice 1: Loop from 5 to 15
+console.log("\nPractice 1: Loop from 5 to 15");
+for (let i = 5; i <= 15; i++) {
+  console.log(i);
+}
+
+// Practice 2: Even or Odd from 1 to 20
+console.log("\nPractice 2: Even or Odd from 1 to 20");
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    console.log(i + " is Even");
+  } else {
+    console.log(i + " is Odd");
+  }
+}
+
+// Practice 3: Sea Creatures Object
+console.log("\nPractice 3: Sea Creatures Object");
+
+const seaCreatures = {
+  fish: ['salmon', 'tuna', 'trout'],
+  mammals: ['dolphin', 'whale', 'seal'],
+  invertebrates: ['octopus', 'squid', 'jellyfish']
+};
+
+console.log("Fish:", seaCreatures.fish);
+console.log("Mammals:", seaCreatures.mammals);
+console.log("Invertebrates:", seaCreatures.invertebrates);
+
+console.log("First fish:", seaCreatures.fish[0]);
+console.log("Last fish:", seaCreatures.fish[seaCreatures.fish.length - 1]);
+
+console.log("First mammal:", seaCreatures.mammals[0]);
+console.log("Last mammal:", seaCreatures.mammals[seaCreatures.mammals.length - 1]);
+
+console.log("First invertebrate:", seaCreatures.invertebrates[0]);
+console.log("Last invertebrate:", seaCreatures.invertebrates[seaCreatures.invertebrates.length - 1]);
+
+// Extension 1: Loop from 20 to 1
+console.log("\nExtension 1: Loop from 20 to 1");
+for (let i = 20; i >= 1; i--) {
+  console.log(i);
+}
+
+// Extension 2: Multiply numbers by 3
+console.log("\nExtension 2: Multiply numbers by 3");
+for (let i = 1; i <= 10; i++) {
+  console.log(i + " x 3 = " + (i * 3));
+}
+
+// Extension 3: Add crustaceans
+console.log("\nExtension 3: Add crustaceans");
+
+seaCreatures.crustaceans = ['crab', 'lobster', 'shrimp'];
+
+console.log("Crustaceans:", seaCreatures.crustaceans);
+
+// Final Task: Summary of Sea Creatures
+console.log("\nFinal Task: Summary of Sea Creatures");
+
+for (let type in seaCreatures) {
+  const group = seaCreatures[type];
+  const first = group[0];
+  const last = group[group.length - 1];
+
+  console.log(`Group: ${type}`);
+  console.log(` - Members: ${group.join(', ')}`);
+  console.log(` - First: ${first}, Last: ${last}`);
+  console.log();
+}
