@@ -1,0 +1,14 @@
+<html>
+<frameset rows="8%,30%,50%,30%" border="0">
+<frame src="s1.html" noresize="noresize" scrolling="no" marginwidth="30">
+<frame src="s2.html" marginwidth="30" scrolling="no">
+<frameset cols="60%,20%">
+<frame src="c1.html" name="content" marginwidth="20" scrolling="no">
+<frame src="s4.html" noresize marginwidth="27" marginheight="15" border="0" scrolling="no">
+</frameset>
+<frameset cols="20%,20%,20%">
+<frame src="s5.html" scrolling="no" marginwidth="100">
+<frame src="s6.html" scrolling="no" marginwidth="100">
+<frame src="s7.html" scrolling="no" marginwidth="100">
+</frameset>
+</html>
