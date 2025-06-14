@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-final-project",
+  "version": "1.0.0",
+  "description": "Final Node.js project using Express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "author": "Mohammed Almashhor",
+  "license": "ISC"
+}
